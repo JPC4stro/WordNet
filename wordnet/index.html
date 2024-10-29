@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WordNet - Tu diccionario de inglés"/>
+    <title>WordNet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header role="banner">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo de WordNet" class="logo" aria-hidden="true">
+            <h1>WordNet</h1>
+        </div>
+        <div id="search-container">
+            <input type="text" id="search" placeholder="Buscar una palabra en inglés..." aria-label="Buscar una palabra">
+            <button id="search-button" aria-label="Botón de búsqueda de palabras" onclick="buscarPalabra()">🔍</button>
+        </div>
+        <div class="settings">
+            <select id="font-selector" aria-label="Selector de fuente">
+                <option value="Arial">Arial</option>
+                <option value="Courier New, Courier, monospace">Courier New</option>
+                <option value="Georgia, serif">Georgia</option>
+                <option value="Times New Roman, Times, serif">Times New Roman</option>
+                <option value="Verdana, sans-serif">Verdana</option>
+            </select>
+            <button id="theme-toggle" aria-label="Alternar tema oscuro o claro">Modo Oscuro 🌑</button>
+        </div>
+    </header>
+    <main role="main">
+        <div id="results" class="word-info"></div>
+        <audio id="audio" style="display:none;"></audio>
+    </main>
+    <footer role="contentinfo">
+        <p>&copy; 2024 WordNet-Tool. Todos los derechos reservados.</p>
+        <p><a href="mailto:wordnet@gmail.com">Contacto: wordnet@gmail.com</a></p>
+        <div class="social-media">
+            <a href="https://github.com/JPC4stro/WordNet" aria-label="Visitar Repositorio Github del Proyecto">Github</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
